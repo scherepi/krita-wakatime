@@ -49,7 +49,7 @@ def main():
         most_recent_time = 0
 
         for root, _, files in os.walk(WATCH_FOLDER):
-            for files in files:
+            for file in files:
                 if file.endswith(".db"):
                     full_path = os.path.join(root, file)
                     mod_time = os.path.getmtime(full_path)
