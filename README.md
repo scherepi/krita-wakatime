@@ -17,7 +17,7 @@ Clone the repo (or download .zip):
 git clone https://github.com/LucasHT22/davinci-resolve-wakatime.git
 ```
 
-In `davinci-resolve.py`, change WAKATIME_API_KEY to your WakaTime API Key and change file path.
+In `davinci-resolve.py`, change `WAKATIME_API_KEY` to your WakaTime API Key and change `WATCH_FOLDER`.
 
 
 Your file path should look like something like this:
@@ -45,4 +45,17 @@ I (Lucas) have a Windows machine, tests are welcome!
 | Windows | ✅ | Free |
 | Mac | | Free |
 
+## How It Works?
+
+1. Script look for changes in `WATCH_FOLDER` every 30 seconds
+2. If change is detected, a WakaTime heartbeat is sent
+3. Done!
+
 ## Main References
+
+[WakaTime Developers](https://wakatime.com/developers)
+[Resolve Scripting Documentation - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=78611)
+[Python3 DaVinci Resolve 19 Console Not Found - alexthecreative](https://alexthecreative.com/python3-davinci-resolve-19-console-not-found/)
+[Scripting in the free version? - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=113252)
+[Where Does Davinci Resolve Save Projects and Project Files? - contentcreatortemplates](https://www.contentcreatortemplates.com/learn/where-does-davinci-resolve-save-projects)
+[Scripting: DaVinciResolveScript module not found - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=137340)
