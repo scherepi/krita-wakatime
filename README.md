@@ -1,4 +1,4 @@
-> - [!WARNING]
+> [!WARNING]
 > "Paid" version is still a Work In Progress, if you have paid version, you can also use free version.
 
 # DaVinci Resolve WakaTime
