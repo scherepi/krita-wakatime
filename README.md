@@ -16,4 +16,6 @@ In `davinci-resolve.py`, change WAKATIME_API_KEY to your WakaTime API Key, and, 
 
 For the paid version, you need to add this script to `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Comp` folder.
 
+For the free version, open terminal and run `python davinci-hackatime.py`.
+
 ## Main References
