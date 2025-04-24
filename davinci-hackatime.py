@@ -68,5 +68,5 @@ def main():
         
         time.sleep(HEARTBEAT_INTERVAL)
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
