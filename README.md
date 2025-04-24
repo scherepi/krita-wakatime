@@ -34,7 +34,7 @@ C:\\Users\\{USER}\\AppData\\Roaming\\Blackmagic Design\\DaVinci Resolve\\Support
 
 Make sure there is a `Project.db` inside, if you just created the project in DaVinci Resolve, it may not appear, add something to the timeline and it should work.
 
-> Don't forget to use \\ for file path! \ or / won't work.
+> Don't forget to use `\\` for file path! \ or / won't work.
 
 ## Compatibility
 
