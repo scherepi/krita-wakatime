@@ -21,7 +21,7 @@ import DaVinciResolveScript as dvr
 WAKATIME_API_KEY = 'YOUR_WAKATIME_API_KEY'
 PROJECT_NAME = 'DaVinci Resolve Project'
 HEARTBEAT_INTERVAL = 120
-CHECK_INTERVAL = 30
+CHECK_INTERVAL = 60
 
 resolve = dvr.scriptapp("Resolve")
 if not resolve:
