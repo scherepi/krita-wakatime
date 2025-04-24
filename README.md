@@ -51,6 +51,8 @@ I (Lucas) have a Windows machine, tests are welcome!
 2. If change is detected, a WakaTime heartbeat is sent
 3. Done!
 
+<video src="assets/davinci-wakatime.mov" width="320" height="240" controls></video>
+
 ## Main References
 
 [WakaTime Developers](https://wakatime.com/developers)
