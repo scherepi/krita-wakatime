@@ -1,4 +1,4 @@
-> [!WARNING]
+> - [!WARNING]
 > "Paid" version is still a Work In Progress, if you have paid version, you can also use free version.
 
 # DaVinci Resolve Wakatime
@@ -55,9 +55,9 @@ I (Lucas) have a Windows machine, tests are welcome!
 
 ## Main References
 
-[WakaTime Developers](https://wakatime.com/developers)
-[Resolve Scripting Documentation - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=78611)
-[Python3 DaVinci Resolve 19 Console Not Found - alexthecreative](https://alexthecreative.com/python3-davinci-resolve-19-console-not-found/)
-[Scripting in the free version? - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=113252)
-[Where Does Davinci Resolve Save Projects and Project Files? - contentcreatortemplates](https://www.contentcreatortemplates.com/learn/where-does-davinci-resolve-save-projects)
-[Scripting: DaVinciResolveScript module not found - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=137340)
+- [WakaTime Developers](https://wakatime.com/developers)
+- [Resolve Scripting Documentation - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=78611)
+- [Python3 DaVinci Resolve 19 Console Not Found - alexthecreative](https://alexthecreative.com/python3-davinci-resolve-19-console-not-found/)
+- [Scripting in the free version? - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=113252)
+- [Where Does Davinci Resolve Save Projects and Project Files? - contentcreatortemplates](https://www.contentcreatortemplates.com/learn/where-does-davinci-resolve-save-projects)
+- [Scripting: DaVinciResolveScript module not found - Blackmagic Design Forum](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=137340)
