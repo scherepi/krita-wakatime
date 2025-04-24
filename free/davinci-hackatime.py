@@ -1,15 +1,17 @@
+
 import os
 import time
 import base64
 import urllib.request
 import urllib.error
 import json
+import psutil
 from datetime import datetime
 
 WAKATIME_API_KEY = 'YOUR_WAKATIME_API_KEY'
 WATCH_FOLDER = "ADD_YOUR_FOLDER"
 HEARTBEAT_INTERVAL = 120
-CHECK_INTERVAL = 30
+CHECK_INTERVAL = 60
 
 def send_heartbeat(file_path, project_name):
     encoded_key = base64.b64encode(WAKATIME_API_KEY.encode()).decode()
@@ -43,6 +45,7 @@ def send_heartbeat(file_path, project_name):
 
 def main():
     last_sent = 0
+    last_mod_time = 0
 
     while True:
         most_recent_file = None 
@@ -52,16 +55,20 @@ def main():
             for file in files:
                 if file.endswith(".db"):
                     full_path = os.path.join(root, file)
-                    mod_time = os.path.getmtime(full_path)
+                    try:
+                        mod_time = os.path.getmtime(full_path)
+                    except FileNotFoundError:
+                        continue
                     if mod_time > most_recent_time:
                         most_recent_time = mod_time
                         most_recent_file = full_path
 
         now = time.time()
-        if most_recent_file and now - last_sent > HEARTBEAT_INTERVAL:
+        if most_recent_file and most_recent_time > last_mod_time and now - last_sent > HEARTBEAT_INTERVAL:
             project_name = os.path.basename(os.path.dirname(most_recent_file))
             send_heartbeat(most_recent_file, project_name)
             last_sent = now
+            last_mod_time = most_recent_time
 
         time.sleep(CHECK_INTERVAL)
 
