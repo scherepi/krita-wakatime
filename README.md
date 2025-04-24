@@ -1,7 +1,7 @@
 > - [!WARNING]
 > "Paid" version is still a Work In Progress, if you have paid version, you can also use free version.
 
-# DaVinci Resolve Wakatime
+# DaVinci Resolve WakaTime
 
 2 scripts to send WakaTime heartbeats, the free version of DaVinci Resolve does not allow you to use the `DaVinciResolveScript` API, BUT we can watch changes in AppData folder.
 
@@ -11,7 +11,7 @@ Pull Requests and Issues are welcome!
 
 ## Setup
 
-Clone the repo (or download .zip):
+Clone the repo (or download [DaVinci Resolve WakaTime](/free/davinci-hackatime.py)):
 
 ```
 git clone https://github.com/LucasHT22/davinci-resolve-wakatime.git
