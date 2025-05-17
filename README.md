@@ -37,10 +37,10 @@ Make sure there is a `Project.db` inside, if you just created the project in DaV
 
 I (Lucas) have a Windows machine, tests are welcome!
 
-| OS | Tested | Version |
-| -- | ------ | ------- |
-| Windows | ✅ | Free |
-| Mac | | Free |
+| OS | Tested |
+| -- | ------ |
+| Windows | ✅ |
+| Mac | |
 
 ## How It Works?
 
