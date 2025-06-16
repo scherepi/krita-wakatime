@@ -2,7 +2,7 @@
 
 Scripts to send WakaTime heartbeats, the free version of DaVinci Resolve does not allow you to use the `DaVinciResolveScript` API, BUT we can watch changes in AppData folder.
 
-However, I haven't tested the paid version, I don't have the money for that. If you have paid version, you can also use free version.
+However, I haven't tested with the paid version, I don't have the money for that.
 
 Pull Requests and Issues are welcome!
 
