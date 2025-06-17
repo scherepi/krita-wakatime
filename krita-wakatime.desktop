@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=krita-wakatime
+X-Python-2-Compatible=false
+X-Krita-Manual=krita-wakatime.html
+Name=Krita Wakatime
+Comment=A neat little plugin that lets you send heartbeats to a Wakatime server.

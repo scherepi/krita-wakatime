@@ -1,4 +1,4 @@
-
+from krita import *
 import os
 import time
 import base64
@@ -43,34 +43,15 @@ def send_heartbeat(file_path, project_name):
     except urllib.error.URLError as e:
         print("[{}] Network error: {}".format(datetime.now(), e.reason))
 
-def main():
-    last_sent = 0
-    last_mod_time = 0
+class myExtension(Extension):
 
-    while True:
-        most_recent_file = None 
-        most_recent_time = 0
+    def __init__(self, parent):
+        super().__init__(parent)
 
-        for root, _, files in os.walk(WATCH_FOLDER):
-            for file in files:
-                if file.endswith(".db"):
-                    full_path = os.path.join(root, file)
-                    try:
-                        mod_time = os.path.getmtime(full_path)
-                    except FileNotFoundError:
-                        continue
-                    if mod_time > most_recent_time:
-                        most_recent_time = mod_time
-                        most_recent_file = full_path
+    def setup(self):
+        pass
 
-        now = time.time()
-        if most_recent_file and most_recent_time > last_mod_time and now - last_sent > HEARTBEAT_INTERVAL:
-            project_name = os.path.basename(os.path.dirname(most_recent_file))
-            send_heartbeat(most_recent_file, project_name)
-            last_sent = now
-            last_mod_time = most_recent_time
+    def createActions(self, window):
+        pass
 
-        time.sleep(CHECK_INTERVAL)
-
-if __name__ == "__main__":
-    main()
+Krita.instance().addExtension(myExtension)
